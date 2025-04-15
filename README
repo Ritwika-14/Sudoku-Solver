@@ -1,0 +1,81 @@
+# Sudoku Solver Game in Java (Swing)
+
+A simple Sudoku solver and game implemented using Java and Swing GUI. This project allows users to solve Sudoku puzzles, generate random puzzles, and check whether a solution is correct or not.
+
+## Features
+
+- **Sudoku Solver**: The application can solve any given Sudoku puzzle by filling in the grid using the backtracking algorithm.
+- **Load Sample Puzzle**: A preloaded Sudoku puzzle can be displayed when the application starts.
+- **Generate Random Puzzle**: Random Sudoku puzzles are generated with a unique solution.
+- **Check Solution**: The app allows users to check if the current Sudoku grid is correctly solved.
+- **Clear Board**: Clears all the cells, allowing the user to start with a new puzzle.
+
+## Requirements
+
+- **Java**: This project is written in Java and requires Java 8 or higher.
+- **IDE**: Any IDE that supports Java development (e.g., IntelliJ IDEA, Eclipse, VS Code with Java Extension Pack).
+- **Swing Library**: Swing is used for the GUI, which is bundled with the standard Java Development Kit (JDK).
+
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Ritwika-14/sudoku-solver.git
+```
+
+### 2. Compile and Run
+
+To compile and run the project:
+
+1. Open the `SudokuUI.java` file in your IDE or editor.
+2. Run the project using the "Run" button in your IDE or from the command line:
+
+   ```bash
+   javac SudokuUI.java
+   java SudokuUI
+   ```
+
+The application should open in a new window, displaying the Sudoku grid with buttons for solving, generating random puzzles, and checking solutions.
+
+## Usage
+
+1. **Load Sample Puzzle**: The sample puzzle will load automatically when the app starts. You can click the "Load Sample" button to reload it if needed.
+2. **Solve Sudoku**: Enter a puzzle manually or use the sample. Click "Solve" to have the application solve the puzzle.
+3. **Generate Random Puzzle**: Click "Generate Random" to get a randomly generated puzzle with a unique solution.
+4. **Check Solution**: Click "Check Solution" to verify if your current puzzle configuration is correct.
+5. **Clear Board**: Clears all inputted or generated values in the Sudoku grid.
+
+## Code Explanation
+
+### `SudokuSolver.java`
+The `SudokuSolver` class contains the logic for solving Sudoku puzzles using a backtracking algorithm. It includes methods to:
+
+- Solve the puzzle recursively.
+- Validate whether a Sudoku board is solvable.
+- Check whether a number can be placed in a specific cell.
+
+### `SudokuUI.java`
+The `SudokuUI` class contains the Swing-based user interface for the Sudoku game. It sets up the grid, handles user interactions, and integrates the `SudokuSolver` to solve the puzzle, generate random puzzles, and check solutions.
+
+### Features of the UI:
+- **Grid Layout**: 9x9 grid of text fields to represent the Sudoku board.
+- **Buttons**: Solve, Clear, Load Sample, Generate Random, and Check Solution buttons for user interaction.
+- **Input Validation**: Only digits from 1 to 9 can be entered in each cell of the grid.
+
+## Contributing
+
+Feel free to fork this project and make improvements! If you find any bugs or have suggestions, please open an issue or submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
